@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio — Ziki Febrian | TI UIR</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="scanline"></div>
+
+<header>
+  <div class="logo"><span>~/</span>ti-uir<span>.portofolio</span></div>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-bg-orb orb1"></div>
+    <div class="hero-bg-orb orb2"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge"><span class="badge-dot"></span>Semester 4 · Teknik Informatika UIR</div>
+        <h1 class="hero-name"><span class="line1">Ziki</span><span class="line2">Febrian</span></h1>
+        <p class="hero-tagline">Web Developer &amp; <span class="highlight">Frontend Engineer</span><br>Universitas Islam Riau · Pekanbaru</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn-primary">Hubungi Saya</a>
+          <a href="#about" class="btn-secondary">Lihat Profil</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="profile-card">
+          <div class="profile-card-inner">
+            <div class="profile-img-wrap">💻</div>
+            <div class="profile-stats">
+              <div class="stat-item"><span class="stat-num">4</span><span class="stat-label">Semester</span></div>
+              <div class="stat-item"><span class="stat-num">2024</span><span class="stat-label">Angkatan</span></div>
+              <div class="stat-item"><span class="stat-num">UIR</span><span class="stat-label">Kampus</span></div>
+              <div class="stat-item"><span class="stat-num">TI</span><span class="stat-label">Jurusan</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <article id="about">
+    <div class="section-wrap">
+      <div class="section-label">01 — About Me</div>
+      <h2 class="section-title">Tentang Saya</h2>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p>Saya adalah mahasiswa <strong>Teknik Informatika semester 4</strong> angkatan 2024 di Universitas Islam Riau yang sedang mendalami dunia teknologi dan pengembangan perangkat lunak.</p>
+          <br>
+          <p>Fokus utama saya ada di <strong>pengembangan web frontend</strong> menggunakan HTML5, CSS3, dan JavaScript. Saya percaya bahwa desain yang baik bukan hanya soal estetika, tapi juga tentang pengalaman pengguna yang intuitif.</p>
+          <br>
+          <p>Saat ini saya aktif belajar <strong>framework modern</strong> dan terus mengembangkan portofolio proyek-proyek web yang bermakna.</p>
+        </div>
+        <div>
+          <div class="section-label" style="margin-bottom:1rem">Tech Stack</div>
+          <div class="skills-grid">
+            <div class="skill-chip">HTML5 / CSS3</div>
+            <div class="skill-chip">JavaScript</div>
+            <div class="skill-chip">Responsive Design</div>
+            <div class="skill-chip">Git & GitHub</div>
+            <div class="skill-chip">VS Code</div>
+            <div class="skill-chip">Python Dasar</div>
+            <div class="skill-chip">SQL / Database</div>
+            <div class="skill-chip">UI/UX Dasar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Education -->
+  <section id="education">
+    <div class="section-wrap">
+      <div class="section-label">02 — Education</div>
+      <h2 class="section-title">Riwayat Pendidikan</h2>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-year">2024 — Sekarang</div>
+          <div class="timeline-school">Universitas Islam Riau</div>
+          <div class="timeline-major">S1 Teknik Informatika · Pekanbaru, Riau</div>
+          <div class="timeline-badge">Aktif · Semester 4</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2020 — 2023</div>
+          <div class="timeline-school">SMA Negeri 5 Pekanbaru</div>
+          <div class="timeline-major">Ilmu Pengetahuan Alam (IPA)</div>
+          <div class="timeline-badge">Lulus</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="section-wrap">
+      <div class="section-label">03 — Contact</div>
+      <h2 class="section-title">Hubungi Saya</h2>
+      <div class="contact-grid reveal">
+        <div class="contact-info">
+          <p>Tertarik berkolaborasi atau<br>punya pertanyaan? Kirim pesan!</p>
+          <div class="contact-links">
+            <a href="#" class="contact-link"><div class="contact-link-icon">📧</div>mahasiswa@student.uir.ac.id</a>
+            <a href="#" class="contact-link"><div class="contact-link-icon">🐙</div>github.com/ti-uir</a>
+            <a href="#" class="contact-link"><div class="contact-link-icon">💼</div>linkedin.com/in/ti-uir</a>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" placeholder="Masukkan nama Anda" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Alamat Email</label>
+            <input type="email" id="email" placeholder="contoh@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit" id="submitBtn">Kirim Pesan →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Teknik Informatika UIR — Disusun oleh Asisten Dosen.</p>
+  <div class="footer-accent">// Built with HTML5 · CSS3</div>
+</footer>
+
+<script>
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursorRing');
+let mouseX=0, mouseY=0, ringX=0, ringY=0;
+
+document.addEventListener('mousemove', e => {
+  mouseX = e.clientX; mouseY = e.clientY;
+  cursor.style.transform = `translate(${mouseX-6}px,${mouseY-6}px)`;
+});
+
+(function animateRing() {
+  ringX += (mouseX-ringX)*0.12; ringY += (mouseY-ringY)*0.12;
+  ring.style.transform = `translate(${ringX-18}px,${ringY-18}px)`;
+  requestAnimationFrame(animateRing);
+})();
+
+document.querySelectorAll('a,button,.skill-chip,.timeline-item').forEach(el => {
+  el.addEventListener('mouseenter', () => { ring.style.width=ring.style.height='50px'; });
+  el.addEventListener('mouseleave', () => { ring.style.width=ring.style.height='36px'; });
+});
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, {threshold:.15});
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  btn.textContent = 'Terkirim ✓';
+  btn.style.cssText += 'border-color:#00e5ff;background:rgba(0,229,255,0.1)';
+  setTimeout(() => { btn.textContent='Kirim Pesan →'; btn.style.background=''; e.target.reset(); }, 3000);
+}
+</script>
+</body>
+</html>
