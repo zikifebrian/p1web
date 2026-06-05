@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager Modern</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen flex justify-center items-center bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800">
+
+    <div class="w-full max-w-lg p-8 rounded-3xl bg-white/10 backdrop-blur-lg border border-white/20 shadow-2xl">
+
+        <h1 class="text-4xl font-extrabold text-center text-cyan-300 mb-8">
+            📋 Task Manager
+        </h1>
+
+        <div class="flex gap-3 mb-6">
+            <input
+                type="text"
+                id="task-field"
+                placeholder="Masukkan tugas..."
+                class="flex-1 px-4 py-3 rounded-xl bg-slate-800/50 text-white border border-cyan-400/30 focus:outline-none focus:border-cyan-400"
+            >
+
+            <button
+                id="save-task"
+                class="px-5 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-600 text-white font-bold transition-all duration-300 hover:scale-105"
+            >
+                Tambah
+            </button>
+        </div>
+
+        <ul id="activity-list" class="space-y-3"></ul>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
